@@ -441,7 +441,7 @@ header {
     color: #d43242;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:600px) {
 
     #menu-icon {
         display: block;
