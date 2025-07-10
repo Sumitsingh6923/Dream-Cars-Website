@@ -443,9 +443,6 @@ header {
 
 @media only screen and (max-width:600px) {
 
-    .hero {
-        height: 800px;
-    }
     #menu-icon {
         display: block;
         font-size: 25px;
