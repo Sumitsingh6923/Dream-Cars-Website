@@ -391,6 +391,7 @@ header {
 .review-container{
     height: 600px;
     width: 70%;
+    align-items: center;
 }
 
 /*--Footer--*/
