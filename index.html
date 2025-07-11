@@ -210,31 +210,37 @@
 
 <!--   Booking -->
   <section>
-     <div class="booking-container">
-    <h1>Book Your Ride</h1>
+   <div class="booking-container">
+    <h1>New Car Booking</h1>
     <form class="booking-form">
-      <label for="pickup">Pickup Location:</label>
-      <input type="text" id="pickup" name="pickup" required />
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required />
 
-      <label for="dropoff">Drop-off Location:</label>
-      <input type="text" id="dropoff" name="dropoff" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
 
-      <label for="time">Time:</label>
-      <input type="time" id="time" name="time" required />
-
-      <label for="car-type">Car Type:</label>
-      <select id="car-type" name="car-type" required>
-        <option value="">--Select--</option>
-        <option value="sedan">Sedan</option>
-        <option value="suv">SUV</option>
-        <option value="luxury">Luxury</option>
-        <option value="van">Van</option>
+      <label for="car-model">Select Car Model:</label>
+      <select id="car-model" name="car-model" required>
+        <option value="">--Choose Model--</option>
+        <option value="sedan2025">Sedan 2025</option>
+        <option value="suv2025">SUV 2025</option>
+        <option value="electric2025">Electric 2025</option>
+        <option value="luxury2025">Luxury 2025</option>
       </select>
 
-      <button type="submit">Book Now</button>
+      <label for="color">Preferred Color:</label>
+      <input type="text" id="color" name="color" required />
+
+      <label for="date">Preferred Delivery/Test Drive Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="location">Pickup or Delivery Location:</label>
+      <input type="text" id="location" name="location" required />
+
+      <button type="submit">Submit Booking</button>
     </form>
   </div>
   </section>
