@@ -387,6 +387,12 @@ header {
     transition: 0.4s;
 }
 
+/*--Review--*/
+.review-container{
+    height: 600px;
+    width: 70%;
+}
+
 /*--Footer--*/
 .footer {
     background-color: darkblue;
