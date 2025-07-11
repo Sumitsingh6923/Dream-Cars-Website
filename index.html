@@ -217,13 +217,37 @@
       <p>Dream Cars is India's leading car search venture that helps users buy cars that are right for them.</p>
     </div>
     <!-- review Container -->
-    <div class="review-container container">
-      <!-- Box 1 -->
-      <div class="review">
-        <img src="https://d2bvhe78se1grn.cloudfront.net/original/3X/0/c/0ca75c9d48170f5f0869918480a0d7c06838ea9c.png"
-          alt="">
-      </div>
-    </div>
+    <div class="review-container">
+        <h1>Customer Reviews – Car Booking</h1>
+      
+        <div class="review">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">The car was clean, comfortable, and arrived right on time. Highly recommend!</p>
+            <p class="review-author">- Sarah M.</p>
+        </div>
+
+        <div class="review">
+            <div class="stars">⭐⭐⭐☆☆</div>
+            <p class="review-text">Good service, but the pickup was a bit late.</p>
+            <p class="review-author">- Kevin J.</p>
+
+          <!-- Review Form -->
+        <form class="review-form">
+            <h2>Leave Your Review</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating (1 to 5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="review">Your Experience:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        </div>
   </section>
   <!-- Footer -->
   <section class="footer">
