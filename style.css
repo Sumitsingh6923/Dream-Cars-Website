@@ -387,18 +387,18 @@ header {
 
 /*-- Booking --*/
 .booking-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 40px auto;
-  padding: 30px;
   background-color: #fff;
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  margin-bottom: 25px;
 }
 
 .booking-form {
@@ -409,6 +409,7 @@ h1 {
 .booking-form label {
   margin: 10px 0 5px;
   font-weight: bold;
+  color: #333;
 }
 
 .booking-form input,
@@ -423,17 +424,17 @@ h1 {
   margin-top: 20px;
   padding: 12px;
   font-size: 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #27ae60;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .booking-form button:hover {
-  background-color: #0056b3;
+  background-color: #219150;
 }
-
 /*--Review--*/
 
 .review-container {
@@ -681,10 +682,6 @@ h1, h2 {
   .booking-form input,
   .booking-form select {
     font-size: 16px;
-  }
-
-  .booking-form button {
-    font-size: 15px;
   }
     
     .review-container {
