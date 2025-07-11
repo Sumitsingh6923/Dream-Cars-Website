@@ -207,13 +207,41 @@
       </div>
     </div>
   </section>
+
+<!--   Booking -->
+  <section>
+     <div class="booking-container">
+    <h1>Book Your Ride</h1>
+    <form class="booking-form">
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" name="pickup" required />
+
+      <label for="dropoff">Drop-off Location:</label>
+      <input type="text" id="dropoff" name="dropoff" required />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="car-type">Car Type:</label>
+      <select id="car-type" name="car-type" required>
+        <option value="">--Select--</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="luxury">Luxury</option>
+        <option value="van">Van</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  </section>
   <!-- Review -->
   <section class="review-container" id="review">
     <div class="heading">
-      <span>
         <h2>Reviews</h2>
-      </span>
-      <h2>Please review our website and share your </h2>
       <p>Dream Cars is India's leading car search venture that helps users buy cars that are right for them.</p>
     </div>
     <!-- review Container -->
