@@ -198,7 +198,7 @@ header {
 
 .slick-next,
 .slick-prev {
-    top: 110% !important;
+    top: 100% !important;
 }
 
 .slick-prev {
@@ -219,7 +219,7 @@ header {
 
 .slick-dots {
     padding-left: 450px !important;
-    margin-bottom: -45px !important;
+    margin-bottom: 3px !important;
     color: white;
 }
 
