@@ -130,7 +130,7 @@ header {
 }
 
 .hero .row {
-/*     width: 90%; */
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +145,7 @@ header {
 
 .hero .row .left-sec h1 {
     font-size: 48px;
-    padding-right: 140px;
+    padding-right: 40px;
     color: #fff;
     text-transform: capitalize;
 }
