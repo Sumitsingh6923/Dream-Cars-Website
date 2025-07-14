@@ -27,6 +27,12 @@ body {
 
 header {
     padding: 10px 10%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .nav {
@@ -177,7 +183,7 @@ header {
 }
 
 .hero .right-sec {
-    width: 69%;
+    width: 70%;
     padding-top: 100px;
 }
 
@@ -635,15 +641,15 @@ h2 {
     .slick-next,
     .slick-prev {
         top: 110% !important;
-        z-index: 0;
+        z-index: 20;
     }
 
     .slick-prev {
-        left: 215px !important;
+        left: 200px !important;
     }
 
     .slick-next {
-        right: 20px !important;
+        right: 10px !important;
     }
 
 
