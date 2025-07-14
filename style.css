@@ -714,8 +714,12 @@ h2 {
     }
 
     .footer .box-container .box a {
-        font-size: 10px;
+        font-size: 8px;
         padding-bottom: 5px;
+    }
+
+    .footer .box-container .box a:hover i {
+        padding-right: 0px;
     }
 
     .footer .credit {
