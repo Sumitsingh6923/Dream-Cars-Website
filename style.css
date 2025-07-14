@@ -648,7 +648,7 @@ h2 {
     }
 
     .slick-prev {
-        left: 180px !important;
+        left: 190px !important;
     }
 
     .slick-next {
@@ -716,12 +716,6 @@ h2 {
     .footer .box-container .box a {
         font-size: 10px;
         padding-bottom: 5px;
-        padding-right: 0px;
-    }
-
-
-    .footer .box-container .box a:hover i {
-        padding-right: 0%;
     }
 
     .footer .credit {
