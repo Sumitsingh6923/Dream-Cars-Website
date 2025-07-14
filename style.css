@@ -716,6 +716,7 @@ h2 {
     .footer .box-container .box a {
         font-size: 10px;
         padding-bottom: 5px;
+        padding-right: 0px;
     }
 
 
