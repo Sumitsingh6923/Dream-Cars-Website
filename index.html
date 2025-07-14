@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dream Cars</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -39,8 +39,7 @@
         <li><a href="#review">Review</a></li>
         <i class="fas fa-xmark" id="cross" onclick="closemenu()"></i>
       </ul>
-
-      <!-- Search Icon -->
+        <!-- Search Icon -->
       <i class='bx bx-search-alt-2' id="search-icon"></i>
       <!-- Search Box -->
       <div class="search-box container">
@@ -207,23 +206,81 @@
       </div>
     </div>
   </section>
+
+<!--   Booking -->
+  <section>
+   <div class="booking-container">
+    <h1>Booking</h1>
+    <form class="booking-form">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="car-model">Select Car Model:</label>
+      <select id="car-model" name="car-model" required>
+        <option value="">--Choose Model--</option>
+        <option value="sedan2025">Sedan 2025</option>
+        <option value="suv2025">SUV 2025</option>
+        <option value="electric2025">Electric 2025</option>
+        <option value="luxury2025">Luxury 2025</option>
+      </select>
+
+      <label for="color">Preferred Color:</label>
+      <input type="text" id="color" name="color" required />
+
+      <label for="date">Preferred Delivery/Test Drive Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="location">Pickup or Delivery Location:</label>
+      <input type="text" id="location" name="location" required />
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+  </section>
   <!-- Review -->
   <section class="review-container" id="review">
     <div class="heading">
-      <span>
         <h2>Reviews</h2>
-      </span>
-      <h2>Please review our website and share your </h2>
       <p>Dream Cars is India's leading car search venture that helps users buy cars that are right for them.</p>
     </div>
     <!-- review Container -->
-    <div class="review-container container">
-      <!-- Box 1 -->
-      <div class="review">
-        <img src="https://d2bvhe78se1grn.cloudfront.net/original/3X/0/c/0ca75c9d48170f5f0869918480a0d7c06838ea9c.png"
-          alt="">
-      </div>
-    </div>
+    <div class="review-container">
+        <h1>Customer Reviews – Car Booking</h1>
+      
+        <div class="review">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">The car was clean, comfortable, and arrived right on time. Highly recommend!</p>
+            <p class="review-author">- Ajay Singh</p>
+        </div>
+
+        <div class="review">
+            <div class="stars">⭐⭐⭐☆☆</div>
+            <p class="review-text">Good service, but the pickup was a bit late.</p>
+            <p class="review-author">- Suraj Singh</p>
+
+          <!-- Review Form -->
+        <form class="review-form">
+            <h2>Leave Your Review</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating (1 to 5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="review">Your Experience:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        </div>
   </section>
   <!-- Footer -->
   <section class="footer">
