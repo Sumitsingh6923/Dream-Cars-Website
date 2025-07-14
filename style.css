@@ -90,7 +90,7 @@ header {
 
 .search-box {
     position: absolute;
-    top: 12%;
+    top: 24%;
     right: 0;
     left: 0;
     background: var(--bg-color);
