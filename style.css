@@ -26,12 +26,6 @@ body {
 
 
 header {
-    padding: 10px 10%;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
     width: 100%;
 }
 
@@ -40,6 +34,11 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0px 10%;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
 }
 
 #menu-icon {
@@ -236,8 +235,10 @@ header {
 }
 
 .heading {
+    margin-top: 50px;
     text-align: center;
     font-size: 30px;
+    padding-top: 100px;
 }
 
 .heading span {
@@ -298,6 +299,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 50px;
 }
 
 .about-img {
@@ -394,10 +396,11 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.booking-heading {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 25px;
+    font-size: 48px;
 }
 
 .booking-form {
@@ -626,7 +629,7 @@ h2 {
     }
 
     .hero .right-sec {
-        width: 68%;
+        width: 70%;
         padding-top: 80px;
         padding-right: 5px;
     }
@@ -645,7 +648,7 @@ h2 {
     }
 
     .slick-prev {
-        left: 200px !important;
+        left: 170px !important;
     }
 
     .slick-next {
@@ -717,7 +720,7 @@ h2 {
 
 
     .footer .box-container .box a:hover i {
-        padding-right: 1rem;
+        padding-right: 0%;
     }
 
     .footer .credit {
