@@ -648,8 +648,7 @@ h2 {
     }
 
     .slick-prev {
-        position: relative;
-        left: 100px !important;
+        left: 170px !important;
     }
 
     .slick-next {
@@ -710,7 +709,6 @@ h2 {
         font-size: 8px;
         padding-bottom: 5px;
     }
-
 
     .footer .box-container .box a:hover i {
         padding-right: 0px;
