@@ -616,7 +616,7 @@ h2 {
     /* Hero Section */
     .hero {
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 35px;
         height: auto;
     }
 
