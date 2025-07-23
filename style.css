@@ -114,7 +114,7 @@ body {
 }
 
 .hero {
-    height: 105vh;
+    height: 100vh;
     width: 100%;
     background-color: #26284e;
     display: flex;
@@ -124,7 +124,7 @@ body {
 }
 
 .hero .row {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,11 +186,13 @@ body {
 }
 
 .hero .right-sec img {
-    width: 650px;
-    height: 450px;
-    margin: auto;
-    float: right;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
+
 
 .slick-next,
 .slick-prev {
@@ -199,12 +201,12 @@ body {
 
 .slick-prev {
     position: relative;
-    left: 790px !important;
+    left: 850px !important;
 }
 
 .slick-next {
     position: relative;
-    right: 90px !important;
+    right: 120px !important;
 }
 
 
@@ -559,164 +561,192 @@ h2 {
     color: #d43242;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
 
+    /* Menu Icon */
     #menu-icon {
         display: block;
         font-size: 25px;
         cursor: pointer;
     }
 
+    .nav {
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
     .nav .Navbar {
-        background: white;
         position: fixed;
-        top: 0px;
-        left: -200px;
-        width: 150px;
-        height: auto;
-        padding-top: 5px;
-        z-index: 2;
-        transition: left 0.5s;
+        top: 0;
+        left: -100%;
+        width: 200px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px 20px;
+        z-index: 5;
+        transition: 0.3s ease;
+    }
+
+    .nav .Navbar.active {
+        left: 0;
     }
 
     .nav .Navbar li {
         display: block;
-        margin: 25px;
+        margin: 15px 0;
     }
 
-    .nav ul #cross {
-        position: absolute;
-        top: 5px;
-        right: 25px;
+    #cross {
         display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
         cursor: pointer;
     }
 
+    /* Search Box */
     .search-box {
-        width: 50%;
-        position: absolute;
-        left: 225px;
+        width: 90%;
+        left: 5%;
     }
 
+    /* Hero Section */
     .hero {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 1rem;
+        flex-direction: column;
+        padding-top: 20px;
+        height: auto;
     }
 
-    .hero .row .left-sec {
-        width: 30%;
-        margin-top: 100px;
-        margin-left: 25px;
+    .hero .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .row .left-sec,
+    .hero .row .right-sec {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
     }
 
     .hero .row .left-sec h1 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
     .hero .row .left-sec p {
-        margin: 14px 0;
-        padding-right: 0px;
         font-size: 14px;
+        margin: 10px 0;
     }
 
     .hero .row .left-sec .discover-btn {
-        border-radius: 5px;
-        margin-top: 5px;
-        padding: 0 2px;
-    }
-
-    .hero .right-sec {
-        width: 70%;
-        padding-top: 80px;
-        padding-right: 5px;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 20px auto;
     }
 
     .hero .right-sec img {
-        width: 200px;
-        height: 150px;
-        margin: auto;
-        float: right;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
     }
 
+    /* Slick Navigation */
     .slick-next,
     .slick-prev {
-        top: 130% !important;
+        display: none !important;
     }
-
-    .slick-prev {
-        left: 170px !important;
-    }
-
-    .slick-next {
-        position: relative;
-        right: 50px !important;
-    }
-
 
     .slick-dots {
-        display: none;
+        display: none !important;
     }
 
+    /* Cars Section */
+    .cars-container {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem;
+    }
 
-    .heading {
+    .cars-container .box {
+        height: 180px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about .btn {
         font-size: 20px;
+        width: 120px;
+        height: 40px;
     }
 
+    /* Blog Section */
+    .blog-container {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .blog-container .box {
+        width: 100%;
+    }
+
+    /* Booking Section */
     .booking-container {
         width: 90%;
         padding: 20px;
     }
 
-    h1 {
-        font-size: 24px;
+    .booking-heading {
+        font-size: 28px;
     }
 
-    .booking-form input,
-    .booking-form select {
-        font-size: 16px;
-    }
-
+    /* Review Section */
     .review-container {
         width: 90%;
         padding: 20px;
     }
 
-    .review-form input,
-    .review-form textarea {
-        font-size: 16px;
+    h1, h2 {
+        font-size: 22px;
     }
 
-    h1,
-    h2 {
-        font-size: 24px;
-    }
-
+    /* Footer */
     .footer .box-container {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
     .footer .box-container .box h3 {
         font-size: 18px;
-        padding-bottom: 5px;
     }
 
     .footer .box-container .box a {
-        font-size: 8px;
-        padding-bottom: 5px;
-    }
-
-    .footer .box-container .box a:hover i {
-        padding-right: 0px;
+        font-size: 12px;
     }
 
     .footer .credit {
         font-size: 1rem;
+        padding: 20px 0;
     }
 
-    .footer .credit span {
-        color: #d43242;
-    }
 }
